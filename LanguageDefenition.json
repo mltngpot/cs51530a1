@@ -1,0 +1,67 @@
+{
+  "keywords" : [{
+    "lexeme" : "double",
+	"regex" : ""
+	}, {
+    "lexeme" : "int",
+	"regex" : ""
+	},{
+    "lexeme" : "long",
+	"regex" : ""
+	},{
+    "lexeme" : "char",
+	"regex" : ""
+	},{
+    "lexeme" : "boolean",
+	"regex" : ""
+	}],
+  "operators" : [{
+    "lexeme" : "equal",
+	"regex" : ""
+	},{
+    "lexeme" : "plus",
+	"regex" : ""
+	},{
+    "lexeme" : "minus",
+	"regex" : ""
+	},{
+    "lexeme" : "multiply",
+	"regex" : ""
+	},{
+    "lexeme" : "divide",
+	"regex" : ""
+	},{
+    "lexeme" : "plusequal",
+	"regex" : ""
+	},{
+    "lexeme" : "minusequal",
+	"regex" : ""
+	},{
+    "lexeme" : "timesequal",
+	"regex" : ""
+	},{
+    "lexeme" : "divideequal",
+	"regex" : ""
+	}
+   ],
+   "literals" : [{
+    "lexeme" : "intliteral",
+	"regex" : ""
+	},{
+    "lexeme" : "doubleliteral",
+	"regex" : ""
+	}]
+	"separators" : [{
+    "lexeme" : "semicolon",
+	"regex" : ""
+	},{
+    "lexeme" : "comma",
+	"regex" : ""
+	}],
+	"identifiers" : [
+		{
+			"lexeme": "identifier",
+			"regex" : ""
+		}
+	]
+}

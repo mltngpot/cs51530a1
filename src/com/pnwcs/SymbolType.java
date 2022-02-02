@@ -3,6 +3,9 @@ package com.pnwcs;
 public enum SymbolType {
     start,
     operator,
-    identifier
+    identifier,
+    keyword,
+    seperator,
+    literal
 
 }

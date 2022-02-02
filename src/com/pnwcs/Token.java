@@ -2,7 +2,7 @@ package com.pnwcs;
 
 public class Token {
     public SymbolType type;
-    public String value;
+    public String lexeme;
 
     @Override
     public String toString() {

@@ -13,7 +13,7 @@ public class Symbols {
         // read from json file
         // {
         //   "operator" : [
-        //     { "name" : "plus",
+        //     { "lexeme" : "plus",
         //       "regex" : "[+]"
         //   ],
         // ...
