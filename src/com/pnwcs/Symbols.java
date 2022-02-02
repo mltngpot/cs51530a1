@@ -1,8 +1,14 @@
 package com.pnwcs;
 
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
-public class SymbolList extends List<Symbol> {
+public class Symbols {
+
+    public List<Symbol> operators = new List<Symbol>();
+
     public void read(String arg) {
         // read from json file
         // {

@@ -6,7 +6,7 @@ import java.util.Queue;
 public class Main {
 
     public static TokenQueue tokenQueue = new TokenQueue();
-    public static SymbolList symbolList = new SymbolList();
+    public static Symbols symbols = new Symbols();
 
     public static void main(String[] args) {
         // read command arguments pass, if successful continue on
@@ -18,11 +18,14 @@ public class Main {
             if(token.type == SymbolType.start) {
                 break;
             }
-            tokenQueue.enqueue(symbolList.ResolveToken(token));
+            writeTokens(token);
         }
+    }
 
+    private static void writeTokens(Token resolveToken) {
+        var tokens = symbols.ResolveToken(token);
         // we hit the start token, time to print everything
-        for (Token token: tokenQueue) {
+        for (Token token: resolveToken) {
             System.WriteLine(Token.ToString());
         }
     }
@@ -37,7 +40,7 @@ public class Main {
                     ++i;
                     if(args[i]) // if string ! null, or empty
                     {
-                        symbolList.read(args[i]);
+                        symbols.read(args[i]);
                     }
                     break;
                 case "--source":
@@ -59,4 +62,5 @@ public class Main {
             }
         }
     }
+
 }
