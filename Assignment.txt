@@ -1,0 +1,32 @@
+For this project, you can work in a group of 3-4 people. You can use java, c, c++, or python.
+
+Implement a scanner that can recognize the following type of tokens:
+
+1) keywords, one of 
+     double int long char boolean
+2) operator 
+=   
++   -   *   /   
++=  -=  *=  /=  
+
+3) integer literal
+
+DecimalIntegerLiteral defined here 
+https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html#jls-DecimalIntegerLiteral 
+
+4) double literal
+
+one or more digits.[zero or more digits]
+
+5) identifier
+  a letter followed by sequence of digits or letter
+  cannot be a keyword in 1)
+
+ letter: a-z, or A-Z
+ digits: 0-9
+6) separators, one of 
+;  , 
+
+The program should read  a file, output the tokens on screen or file. Remember a token is pair including the lexeme and its type
+
+Submit your source code, your test file, the output of your test file, your file should test all possible cases
