@@ -19,6 +19,7 @@ public class Main {
                 break;
             }
             writeTokens(token);
+			System.out.println("testing");
         }
     }
 
