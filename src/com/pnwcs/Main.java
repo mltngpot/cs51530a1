@@ -20,7 +20,7 @@ public class Main {
             }
             writeTokens(token);
         }
-      System.out.println("Joe");
+
     }
 
     private static void writeTokens(Token resolveToken) {
