@@ -6,7 +6,12 @@ import java.util.Queue;
 public class Main {
 
     public static TokenQueue tokenQueue = new TokenQueue();
-    public static Symbols symbols = new Symbols();
+    public static Symbols seperators = new Symbols();
+    public static Symbols operators = new Symbols();
+    public static Symbols keywords = new Symbols();
+    public static Symbols identifiers = new Symbols();
+    public static Symbols literals = new Symbols();
+
 
     public static void main(String[] args) {
         // read command arguments pass, if successful continue on
@@ -14,13 +19,11 @@ public class Main {
             System.exit(-1);
         }
         tokenQueue.enqueue(new Token(StartToken));
-        for (Token token: tokenQueue) { // go through token list until we hit the start token
-            if(token.type == SymbolType.start) {
-                break;
-            }
-            writeTokens(token);
-        }
+        while (!System.in.eof) {
 
+            String line = System.in.readLine();
+            tokenQueue.enqueue(Token.seperateTokens(line));
+        }
     }
 
     private static void writeTokens(Token resolveToken) {

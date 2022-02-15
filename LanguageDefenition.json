@@ -1,67 +1,67 @@
 {
   "keywords" : [{
     "lexeme" : "double",
-	"regex" : ""
+	"regex" : "double$"
 	}, {
     "lexeme" : "int",
-	"regex" : ""
+	"regex" : "int$"
 	},{
     "lexeme" : "long",
-	"regex" : ""
+	"regex" : "long$"
 	},{
     "lexeme" : "char",
-	"regex" : ""
+	"regex" : "char$"
 	},{
     "lexeme" : "boolean",
-	"regex" : ""
+	"regex" : "boolean$"
 	}],
   "operators" : [{
     "lexeme" : "equal",
-	"regex" : ""
+	"regex" : "="
 	},{
     "lexeme" : "plus",
-	"regex" : ""
+	"regex" : "[+][^=]"
 	},{
     "lexeme" : "minus",
-	"regex" : ""
+	"regex" : "[-][^=]"
 	},{
     "lexeme" : "multiply",
-	"regex" : ""
+	"regex" : "[*][^=]"
 	},{
     "lexeme" : "divide",
-	"regex" : ""
+	"regex" : "[/][^=]"
 	},{
     "lexeme" : "plusequal",
-	"regex" : ""
+	"regex" : "[+][=]"
 	},{
     "lexeme" : "minusequal",
-	"regex" : ""
+	"regex" : "[-][=]"
 	},{
     "lexeme" : "timesequal",
-	"regex" : ""
+	"regex" : "[*=]"
 	},{
     "lexeme" : "divideequal",
-	"regex" : ""
+	"regex" : "[/=]"
 	}
    ],
    "literals" : [{
     "lexeme" : "intliteral",
-	"regex" : ""
+	"regex" : "(0|[1-9][_]?[/d]*)[Ll]?"
 	},{
     "lexeme" : "doubleliteral",
-	"regex" : ""
+	"regex" : "[(0|[1-9][/d]*)*[.](0|[1-9][/d]*)"
 	}]
 	"separators" : [{
     "lexeme" : "semicolon",
-	"regex" : ""
+	"regex" : ";"
 	},{
     "lexeme" : "comma",
-	"regex" : ""
+	"regex" : ","
 	}],
 	"identifiers" : [
 		{
 			"lexeme": "identifier",
-			"regex" : ""
+			"regex" : "[a-zA-Z][a-zA-Z0-9]*"
 		}
 	]
 }
