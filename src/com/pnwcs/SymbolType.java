@@ -2,10 +2,10 @@ package com.pnwcs;
 
 public enum SymbolType {
     start,
+    eof,
+    separator,
     operator,
-    identifier,
     keyword,
-    seperator,
+    identifier,
     literal
-
 }
